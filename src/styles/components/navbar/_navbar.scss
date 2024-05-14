@@ -1,0 +1,48 @@
+.NavBar {
+    font-family: 'Lato', sans-serif;
+    .nav-contact {
+        min-height: 3.3rem;
+        padding: .7rem;
+        background-color: $main-bg;
+        .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            .nav-call {
+                p {
+                    margin: 0;
+                    color: $white-color;
+                    i {
+                        color: $yellow-color;
+                        margin-right: .7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        padding: .7rem;
+        background-color: $sky-color;
+        .container-fluid{
+            .logo{
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $blue-color;
+            }
+            .navbar-collapse{
+                .navbar-nav{
+                    gap: 1.6rem;
+                    .n-link{
+                        color: $black-color;
+                    }
+                    .n-link:hover{
+                        color: $blue-color;
+                    }
+                    .n-link.active{
+                        color: $blue-color;
+                    }
+                }
+            }
+        }
+    }
+}

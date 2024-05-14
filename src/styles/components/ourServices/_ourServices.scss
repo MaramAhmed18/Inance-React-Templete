@@ -1,0 +1,79 @@
+.our-service {
+    text-align: center;
+    margin-block: 7.5rem;
+
+    @media (max-width: 991px) {
+        margin-block: 7.2rem;
+    }
+
+    .container {
+        h2 {
+            font-family: 'Merriweather Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        .row {
+            margin-block: 4.2rem 2rem;
+            gap: 1.8rem;
+            @media (max-width: 768px){
+                .col-md-4:nth-of-type(3){
+                    margin: auto;
+                }
+
+            }
+            .col-md-4 {
+                width: calc(100% / 3 - 1.8rem);
+                padding: 2.3rem 1.3rem;
+                text-align: center;
+                transition: .5s ease-in-out;
+                background-color: $white-color;
+                box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+                @media (max-width: 768px) {
+                    width: calc(100% / 2 - 1.8rem);
+                    
+                }
+                @media (max-width: 550px) {
+                    width: 100%;
+                }
+                i{
+                    font-size: 2.8rem;
+                }
+                h5{
+                    font-weight: 600;
+                    margin-top: 1.2rem;
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                &:hover {
+                    color: $white-color;
+                    background-color: $yellow-color;
+                    i {
+                        color: $white-color;
+                    }
+                    h5 {
+                        color: $white-color;
+                    }
+                }
+            }
+            
+        }
+        .btn-b{
+            font-family: 'Merriweather Sans', sans-serif;
+            width: 11rem;
+            padding: .7rem 1.2rem;
+            margin-top: 1rem;
+            color: $white-color;
+            background-color: $blue-color;
+            border: unset;
+            border-radius: .1rem;
+            transition: .3s ease-in-out;
+            &:hover{
+                color: $blue-color;
+                background-color: transparent;
+                border: 1px solid $blue-color;
+            }
+        }
+    }
+
+}

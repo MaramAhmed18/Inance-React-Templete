@@ -1,0 +1,48 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+.testimonial{
+    margin-bottom: 7.5rem;
+
+    @media (max-width: 991px) {
+        margin-bottom: 7.2rem;
+    }
+    .container{
+        h2{
+            margin-bottom: 4rem;
+            font-family: 'Merriweather Sans', sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+        .swiper{
+            padding: .5rem;
+            .swiper-wrapper{
+                margin-bottom: 2rem;
+                .swiper-slide{
+                    .card{
+                        border: none;
+                        box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+                        .row{
+                            padding: 1.5rem  .5rem;
+                            .card-head{
+                                padding-inline: 1rem;
+                                display: flex;
+                                align-items: center;
+                                gap: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-pagination{
+                .swiper-pagination-bullet{
+                    width: .9rem;
+                    height: .9rem;
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: $yellow-color;
+                }
+            }
+        }
+    }
+}
